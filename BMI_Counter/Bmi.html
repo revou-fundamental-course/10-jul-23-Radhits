@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bmi.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form>
+            <label for="gender">Jenis Kelamin</label>
+            <input type="radio" class="text" name="radio" id="m" required>Pria
+            <input type="radio" class="text" name="radio" id="f" required>Wanita<br>
+            
+            <label for="weight">Berat Badan (kg):</label>
+            <input type="numbers" id="weight" name="weight" min="0" max="90" maxlength="2" required><br>
+
+            <label for="height">Tinggi (cm):</label>
+            <input type="numbers" id="height" name="height" min="0" max="90" maxlength="3" required><br>
+
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="js/bmi.js"></script>
+</body>
+</html>
